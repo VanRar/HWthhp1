@@ -35,7 +35,6 @@ public class Main {
                         TypeReference<List<Cat>>() {
                         });
         //выведем классы, при чем поток лучше сразу читать в классы
-        System.out.println("А тут уже классы");
         cats.stream().filter(value -> value.getUpvotes() != null && value.getUpvotes() > 0).forEach(System.out::println);
     }
 }
